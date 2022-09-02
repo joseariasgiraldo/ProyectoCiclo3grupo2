@@ -1,24 +1,19 @@
 @page
-@model ProyectoCiclo3.App.Frontend.Pages.FormAeropuertosModel
+@model ProyectoCiclo3.App.Frontend.Pages.FormRutasModel
 @{
 }
 
 <div class="text-center">
     <form method="POST">
-        <label for="marca" class="form-label">Marca:</label>
-        <input type="text" class="form-control" id="marca" name="marca" required placeholder="marca">
+        <label for="origen" class="form-label">Origen:</label>
+        <input type="text" class="form-control" id="origen" name="origen" required placeholder="origen">
         
-        <label for="modelo" class="form-label">Modelo:</label>
-        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="modelo">
+        <label for="destino" class="form-label">Destino:</label>
+        <input type="text" class="form-control" id="destino" name="destino" required placeholder="destino">
 
-        <label for="numero_asientos" class="form-label">Numero de asientos:</label>
-        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="numero_asientos">
+        <label for="tiempo_estimado" class="form-label">Tiempo estimado:</label>
+        <input type="text" class="form-control" id="tiempo_estimado" name="tiempo_estimado" required placeholder="tiempo_estimado">
 
-        <label for="numero_cabinas" class="form-label">Numero de cabinas:</label>
-        <input type="number" class="form-control" id="numero_cabinas" name="numero_cabinas" required placeholder="numero_cabinas">
-
-        <label for="capacidad_peso" class="form-label">Capacidad en peso:</label>
-        <input type="number" class="form-control" id="capacidad_peso" name="capacidad_peso" required placeholder="capacidad_peso">
         
         <hr>
         <button type="submit" class="btn btn-success">Enviar</button>
