@@ -1,0 +1,26 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.FormAeropuertosModel
+@{
+}
+
+<div class="text-center">
+    <form method="POST">
+        <label for="marca" class="form-label">Marca:</label>
+        <input type="text" class="form-control" id="marca" name="marca" required placeholder="marca">
+        
+        <label for="modelo" class="form-label">Modelo:</label>
+        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="modelo">
+
+        <label for="numero_asientos" class="form-label">Numero de asientos:</label>
+        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="numero_asientos">
+
+        <label for="numero_cabinas" class="form-label">Numero de cabinas:</label>
+        <input type="number" class="form-control" id="numero_cabinas" name="numero_cabinas" required placeholder="numero_cabinas">
+
+        <label for="capacidad_peso" class="form-label">Capacidad en peso:</label>
+        <input type="number" class="form-control" id="capacidad_peso" name="capacidad_peso" required placeholder="capacidad_peso">
+        
+        <hr>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+</div>
