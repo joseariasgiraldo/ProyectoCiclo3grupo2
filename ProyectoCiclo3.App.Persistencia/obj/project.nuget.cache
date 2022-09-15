@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RhKvNHiq+CS5Ciuf4H3LIqttzHD5QS17WIZ1i1GXUJYUUPEtY3jmDiOfT5NxSHPGOUnIJHUMJfKvb+HCLV2s5Q==",
+  "dgSpecHash": "ypK1SlYP8uQA1J7QqdYCSoEnwLg3XR/+HkoWzQ7m+ba5Dd4t89odIx2MTCtnJ26pE0yQiHxGcUX/H1gL8kI9/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose Arias\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jose Arias\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {}
+    "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {}
   },
   "projects": {
     "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj": {
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
+    "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
         "projectName": "ProyectoCiclo3.App.Persistencia",
-        "projectPath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
+        "projectPath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\ProyectoCiclo3.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Jose Arias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\obj\\",
+        "outputPath": "C:\\Users\\Jose Arias\\Desktop\\MINTIC-UNIVERSIDAD DE CALDAS\\Ciclo3\\C#\\ProyectoCiclo3.App\\ProyectoCiclo3.App.persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose Arias\\AppData\\Roaming\\NuGet\\NuGet.Config"
