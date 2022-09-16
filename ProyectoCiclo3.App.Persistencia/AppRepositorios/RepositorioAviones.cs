@@ -13,8 +13,8 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         {
             aviones= new List<Aviones>()
             {
-                new Aviones{id=1,marca="Airbus",modelo= "A320",numero_asientos= "120",numero_cabinas= "2",capacidad_en_peso= "2000"},
-                new Aviones{id=1,marca="Boeing",modelo= "747",numero_asientos= "100",numero_cabinas= "2",capacidad_en_peso= "1800"},
+                new Aviones{id=1,marca="Airbus",modelo= "A320",numero_asientos= "120",numero_banos= "2",capacidad_peso= "2000"},
+                new Aviones{id=1,marca="Boeing",modelo= "747",numero_asientos= "100",numero_banos= "2",capacidad_peso= "1800"},
                 
             };
         }
@@ -28,7 +28,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             return aviones.SingleOrDefault(a => a.id == id);
         }
 
-         public Aviones Update(Aviones newAvion){
+        public Aviones Update(Aviones newAvion){
             var Avion = aviones.SingleOrDefault(a => a.id == newAvion.id);
             if(Avion != null){
                 Avion.marca = newAvion.marca;
@@ -38,5 +38,26 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
                 Avion.capacidad_peso = newAvion.capacidad_peso;
             }
             return Avion;
+        } 
+
+        public Aviones Create(Aviones newAvion)
+        {
+           if(aviones.Count > 0){
+                newAvion.id = aviones.Max(a => a.id) +1; 
+            }else{
+                newAvion.id = 1; 
+            }
+           aviones.Add(newAvion);
+           return newAvion;
+        }
+
+        public Aviones Delete(int id)
+        {
+            var avion= aviones.SingleOrDefault(b => b.id == id);
+            aviones.Remove(avion);
+            return avion;
+        }
+
+
     }
 }

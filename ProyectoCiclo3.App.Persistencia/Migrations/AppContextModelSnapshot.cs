@@ -29,10 +29,13 @@ namespace ProyectoCiclo3.App.Persistencia.Migrations
                     b.Property<string>("ciudad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("coord_X")
+                    b.Property<string>("coord_x")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("coord_y")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("pais")
@@ -50,7 +53,19 @@ namespace ProyectoCiclo3.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("capacidad_peso")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("marca")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("modelo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("numero_asientos")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("numero_banos")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
