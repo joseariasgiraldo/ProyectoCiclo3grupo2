@@ -6,17 +6,17 @@
 <div class="text-center">
     <form method = "POST">
         <label for="marca" class="form-label">Marca:</label>
-        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca" minlength="3" asp-for="Aeropuerto.marca">
-        <span class="text-danger" asp-validation-for="Aeropuerto.marca"></span>
+        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca" minlength="3" asp-for="Avion.marca">
+        <span class="text-danger" asp-validation-for="Avion.marca"></span>
 
         <label for="numero_asientos" class="form-label">Numero de asientos:</label>
-        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Numero de asientos" asp-for="Aeropuerto.numero_asientos">
+        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Numero de asientos" asp-for="Avion.numero_asientos">
 
         <label for="numero_banos" class="form-label">Numero de banos:</label>
-        <input type="text" class="form-control" id="numero_banos" name="numero_banos" required placeholder="Numero de banos" asp-for="Aeropuerto.numero_banos">
+        <input type="text" class="form-control" id="numero_banos" name="numero_banos" required placeholder="Numero de banos" asp-for="Avion.numero_banos">
 
         <label for="capacidad_peso" class="form-label">Capacidad en peso:</label>
-        <input type="number" class="form-control" id="capacidad_peso" name="capacidad_peso" required placeholder="Capacidad en peso" asp-for="Aeropuerto.capacidad_peso" step="any">
+        <input type="number" class="form-control" id="capacidad_peso" name="capacidad_peso" required placeholder="Capacidad en peso" asp-for="Avion.capacidad_peso" step="any">
 
         <hr>
         <button type="submit" class="btn btn-success">Enviar</button>
