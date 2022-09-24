@@ -21,12 +21,11 @@
 
                         @using Microsoft.AspNetCore.Identity
                         @inject SignInManager<IdentityUser> SignInManager
-                        @if (SignInManager.IsSignedIn(User))
-                        {
+                        @if (SignInManager.IsSignedIn(User)) 
+                        {                       
                     
                     <ul class="navbar-nav flex-grow-1">
-                        
-                        
+                                                
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Aeropuertos/create">Crear Aeropuertos</a>
                         </li>
@@ -39,7 +38,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Aviones/List">Listar Aviones</a>
                         </li>
-                         </li>
+                         
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Rutas/create">Crear Rutas</a>
                         </li>
@@ -49,7 +48,7 @@
                         
                     </ul>
 
-                     
+                        }
                 </div>
             </div>
         </nav>

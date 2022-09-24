@@ -7,57 +7,49 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioAviones
     {
-        List<Aviones> aviones;
- 
-    public RepositorioAviones()
-        {
-            aviones= new List<Aviones>()
-            {
-                new Aviones{id=1,marca="Airbus",modelo= "A320",numero_asientos= "120",numero_banos= "2",capacidad_peso= "2000"},
-                new Aviones{id=1,marca="Boeing",modelo= "747",numero_asientos= "100",numero_banos= "2",capacidad_peso= "1800"},
-                
-            };
-        }
+        private readonly AppContext _appContext = new AppContext();
  
         public IEnumerable<Aviones> GetAll()
         {
-            return aviones;
+            return _appContext.Aviones;
         }
  
         public Aviones GetWithId(int id){
-            return aviones.SingleOrDefault(a => a.id == id);
+            return _appContext.Aviones.Find(id);
         }
 
         public Aviones Update(Aviones newAvion){
-            var Avion = aviones.SingleOrDefault(a => a.id == newAvion.id);
-            if(Avion != null){
-                Avion.marca = newAvion.marca;
-                Avion.modelo = newAvion.modelo;
-                Avion.numero_asientos = newAvion.numero_asientos;
-                Avion.numero_banos = newAvion.numero_banos;
-                Avion.capacidad_peso = newAvion.capacidad_peso;
+            var avion = _appContext.Aviones.Find(newAvion.id);
+            if(avion != null){
+                avion.modelo = newAvion.modelo;
+                avion.marca = newAvion.marca;
+                avion.numero_asientos = newAvion.numero_asientos;
+                avion.numero_banos = newAvion.numero_banos;
+                avion.capacidad_peso = newAvion.capacidad_peso;
+                //Guardar en base de datos
+                 _appContext.SaveChanges();
             }
-            return Avion;
-        } 
+            return avion;
+        }
 
-        public Aviones Create(Aviones newAvion)
+        public Aviones Create(Aviones newavion)
         {
-           if(aviones.Count > 0){
-                newAvion.id = aviones.Max(a => a.id) +1; 
-            }else{
-                newAvion.id = 1; 
-            }
-           aviones.Add(newAvion);
-           return newAvion;
+            var addavion = _appContext.Aviones.Add(newavion);
+            //Guardar en base de datos
+            _appContext.SaveChanges();
+            return addavion.Entity;
         }
 
         public Aviones Delete(int id)
         {
-            var avion= aviones.SingleOrDefault(b => b.id == id);
-            aviones.Remove(avion);
-            return avion;
+            var avion = _appContext.Aviones.Find(id);
+            if (avion != null){
+                _appContext.Aviones.Remove(avion);
+                //Guardar en base de datos
+                _appContext.SaveChanges();
+            }
+            return null;
         }
-
 
     }
 }
